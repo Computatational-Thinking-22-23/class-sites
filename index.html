@@ -7,24 +7,51 @@
 
     body{background-color: azure;
         font-family: 'Roboto', sans-serif;}
-    
-    .profile{
-        display: block;
-        /* width:100px; */
+
+
+
+    .container {
+        display: grid;
+        /*height: 300px; /* Or whatever */
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 10px;
+        row-gap: 15px;
+
+    }
+
+    .item {
+        width: 140px;  /* Or whatever */
+        height: 160px; /* Or whatever */
+        margin: 20px;  /* Magic! */
+
         border:3px solid #777;
         border-radius: 6px;
-        /* margin: 5px; */
+
+        padding:2px;
+        justify-self: stretch;
+        margin:0;
+    
+      
+
     }
     
-
-
-    .profile-img{
-       width:100px;
-        
-    }
-    .profile:hover{
+    .item:hover{
         background-color: aquamarine;
     }
+   
+
+    .profile-img{
+       height:100px;
+       margin:20px;
+
+       display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        
+        
+    }
+   
     .name{
         display:block;
         /* padding: 3px; */
@@ -34,165 +61,146 @@
         width: 100%;
         text-align: center;}
 
-    .parent {
-        display: grid;
-        /*height: 300px; /* Or whatever */
-        grid-template-columns: repeat(6, 1fr);
-        column-gap: 10px;
-        row-gap: 15px;
-
-    }
-
-    .child {
-        width: 150px;  /* Or whatever */
-        height: 190px; /* Or whatever */
-        margin: auto;  /* Magic! */
-        /* padding:2px; */
-        justify-self: stretch;
-        margin:0;
-        padding:auto;
-        width:100px
-
-    }
+   
 </style>
 <body>
     <h1>Class Sites</h1>
     <br>
-    <div class="parent">
-    <div class="child profile">
+    <div class="container">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/hamster.png">
             <br><span class="name">AARON</span>
         </a>
     </div>
 
-    <div class="child profile">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/hamster.png">
             <br><span class="name">AGAM</span>
         </a>
     </div>
 
-    <div class="child profile">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/hamster.png">
             <br><span class="name">ALEXIS</span>
         </a>
     </div>
 
-    <div class="child profile">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/hamster.png">
             <br><span class="name">DANNY</span>
         </a>
     </div>
 
-    <div class="child profile">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/hamster.png">
             <br><span class="name">EDOUARD</span>
         </a>
     </div>
 
-    <div class="child profile">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/hamster.png">
             <br><span class="name">CHLOE</span>
         </a>
     </div>
 
-    <div class="child profile">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/hamster.png">
             <br><span class="name">JONATHAN</span>
         </a>
     </div>
 
-    <div class="child profile">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/hamster.png">
             <br><span class="name">JUAN</span>
         </a>
     </div>
 
-    <div class="child profile">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/kohki.jpg">
             <br><span class="name">KOHKI</span>
         </a>
     </div>
 
-    <div class="child profile">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/hamster.png">
             <br><span class="name">LACHLAN</span>
         </a>
     </div>
 
-    <div class="child profile">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/hamster.png">
             <br><span class="name">MARK</span>
         </a>
     </div>
 
-    <div class="child profile">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/hamster.png">
             <br><span class="name">MASON</span>
         </a>
     </div>
 
-    <div class="child profile">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/nico.jpg">
             <br><span class="name">NICOLAS</span>
         </a>
     </div>
 
-    <div class="child profile">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/hamster.png">
             <br><span class="name">NIKITA</span>
         </a>
     </div>
 
-    <div class="child profile">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/hamster.png">
             <br><span class="name">NOAH</span>
         </a>
     </div>
 
-    <div class="child profile">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/hamster.png">
             <br><span class="name">PAUL</span>
         </a>
     </div>
 
-    <div class="child profile">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/hamster.png">
             <br><span class="name">SANSKAR</span>
         </a>
     </div>
 
-    <div class="child profile">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/hamster.png">
             <br><span class="name">SRIKANTH</span>
         </a>
     </div>
 
-    <div class="child profile">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/hamster.png">
             <br><span class="name">VALENTIN</span>
         </a>
     </div>
 
-    <div class="child profile">
+    <div class="item">
         <a href="#">
             <img class="profile-img" src="images/hamster.png">
             <br><span class="name">YUVAL</span>
