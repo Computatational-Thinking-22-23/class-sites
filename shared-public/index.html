@@ -103,6 +103,8 @@ function login(secret) {
     var request = new XMLHttpRequest()
     request.open('GET', url, true)
 
+    console.log(document.referrer);
+
     request.onload = function () {
         if (request.status >= 200 && request.status < 400) {
             window.location = url
